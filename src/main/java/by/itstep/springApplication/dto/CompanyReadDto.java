@@ -1,2 +1,4 @@
-package by.itstep.springApplication.dto;public class CompanyReadDto {
+package by.itstep.springApplication.dto;
+
+public record CompanyReadDto(Long id) {
 }

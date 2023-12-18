@@ -1,4 +1,4 @@
-package by.itstep.database.repository;
+package by.itstep.springApplication.database.repository;
 
 import java.util.Optional;
 

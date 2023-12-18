@@ -1,20 +1,16 @@
-package by.itstep.service;
+package by.itstep.springApplication.service;
 
-import by.itstep.database.entity.Company;
-import by.itstep.database.repository.CompanyRepository;
-import by.itstep.database.repository.CrudRepository;
-import by.itstep.database.repository.UserRepository;
+import by.itstep.springApplication.database.entity.Company;
+import by.itstep.springApplication.database.repository.CrudRepository;
+import by.itstep.springApplication.database.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository userRepository;
-    private final CrudRepository<Integer, Company> companyRepository;
-
-    public UserService(UserRepository userRepository,
-                       CrudRepository<Integer, Company> companyRepository) {
-        this.userRepository = userRepository;
-        this.companyRepository = companyRepository;
-    }
+    private final CrudRepository<Long, Company> companyRepository;
 }

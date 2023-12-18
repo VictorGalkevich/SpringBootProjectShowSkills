@@ -1,4 +1,4 @@
-package by.itstep.ioc;
+package by.itstep.springApplication.ioc;
 
 public class Container {
 

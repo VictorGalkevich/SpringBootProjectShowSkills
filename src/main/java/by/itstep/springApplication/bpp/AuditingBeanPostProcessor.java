@@ -1,5 +1,6 @@
-package by.itstep.bpp;
+package by.itstep.springApplication.bpp;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -9,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
+@Slf4j
 public class AuditingBeanPostProcessor implements BeanPostProcessor {
     private final Map<String, Class<?>> auditBeans = new HashMap<>();
     @Override
@@ -25,12 +27,12 @@ public class AuditingBeanPostProcessor implements BeanPostProcessor {
         if (beanClass != null) {
             return Proxy.newProxyInstance(beanClass.getClassLoader(), beanClass.getInterfaces(),
                     (o, method, objects) -> {
-                        System.out.println("Audit method: " + method.getName());
+                        log.info("Audit method: " + method.getName());
                         long l = System.nanoTime();
                         try {
                             return method.invoke(bean, objects);
                         } finally {
-                            System.out.println("Execution time: " + (System.nanoTime() - l));
+                            log.info("Execution time: " + (System.nanoTime() - l));
                         }
                     });
         }

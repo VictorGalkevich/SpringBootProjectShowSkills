@@ -6,8 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.lang.annotation.Target;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Data
@@ -15,17 +16,13 @@ import java.util.Map;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "company")
-public class Company implements BaseEntity<Long> {
+@Table(name = "chat")
+public class Chat implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-
     @Builder.Default
-    @ElementCollection
-    @CollectionTable(name = "company_locales", joinColumns = @JoinColumn(name = "company_id"))
-    @MapKeyColumn(name = "lang")
-    @Column(name = "description")
-    private Map<String, String> locales = new HashMap<>();
+    @OneToMany(mappedBy = "chat")
+    private List<UserChat> userChats = new ArrayList<>();
 }

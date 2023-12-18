@@ -1,17 +1,18 @@
-package by.itstep.database.repository;
+package by.itstep.springApplication.database.repository;
 
-import by.itstep.bpp.Auditing;
-import by.itstep.bpp.InjectBean;
-import by.itstep.bpp.Transaction;
-import by.itstep.database.entity.Company;
-import by.itstep.database.pool.ConnectionPool;
-import org.springframework.beans.factory.annotation.Autowired;
+import by.itstep.springApplication.bpp.Auditing;
+import by.itstep.springApplication.bpp.Transaction;
+import by.itstep.springApplication.database.entity.Company;
+import by.itstep.springApplication.database.pool.ConnectionPool;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,29 +20,24 @@ import java.util.Optional;
 @Repository
 @Auditing
 @Transaction
-public class CompanyRepository implements CrudRepository<Integer, Company>{
+@RequiredArgsConstructor
+@Slf4j
+public class CompanyRepository implements CrudRepository<Long, Company>{
 
-    //@Qualifier("pool1")
+    @Qualifier("pool1")
     private final ConnectionPool pool1;
     private final List<ConnectionPool> pools;
+    @Value("${db.pool.size}")
     private final Integer poolSize;
 
-    public CompanyRepository(ConnectionPool pool1,
-                             List<ConnectionPool> pools,
-                             @Value("${db.pool.size}") Integer poolSize) {
-        this.pool1 = pool1;
-        this.pools = pools;
-        this.poolSize = poolSize;
-    }
-
     @Override
-    public Optional<Company> finById(Integer id) {
-        System.out.println("findById method...");
-        return Optional.of(new Company(id));
+    public Optional<Company> finById(Long id) {
+        log.info("findById method...");
+        return Optional.of(new Company(id, null, Collections.emptyMap()));
     }
 
     @Override
     public void delete(Company entity) {
-        System.out.println("delete method...");
+        log.info("delete method...");
     }
 }

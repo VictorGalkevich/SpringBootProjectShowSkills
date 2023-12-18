@@ -1,4 +1,4 @@
-package by.itstep.bpp;
+package by.itstep.springApplication.bpp;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

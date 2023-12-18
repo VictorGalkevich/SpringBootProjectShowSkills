@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="" />
+    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/UserChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lombok.config" beforeDir="false" afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bfpp/LogBeanFactoryPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bfpp/LogBeanFactoryPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bfpp/VerifyPropertyBeanFactoryPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bfpp/VerifyPropertyBeanFactoryPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/Auditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/Auditing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/AuditingBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/AuditingBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/InjectBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/InjectBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/InjectBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/InjectBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/TransactionBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/TransactionBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/DatabaseProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/DatabaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/JpaCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/JpaCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/JpaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/pool/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/pool/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/CrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/CompanyReadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/CompanyReadDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/ioc/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/ioc/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/AccessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/AccessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/EntityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/EntityEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/EntityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/listener/entity/EntityListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/webApplication/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/webApplication/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-qa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-qa.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/annotatation/IT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/annotatation/IT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/service/CompanyServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/service/CompanyServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/service/CompanyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/service/CompanyServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/spring.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/spring.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,28 +62,226 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Z0DKK9wBBjfUHfUqwbZqBhotKt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "/Users/vitali/Downloads/spring-starter/src/main/java/by/itstep/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vitali/Downloads/spring-starter/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/vitali/Downloads/spring-starter/src/main/java/by/itstep/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;template.copyright.formatting&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8d2bc06b08999b8573f6657470640130&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.itstep.springApplication.database.entity" />
+      <recent name="by.itstep.springApplication.config" />
+      <recent name="by.itstep.springApplication.listener.entity" />
+      <recent name="by.itstep.database.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.itstep.springApplication.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.itstep.springApplication.database.entity" />
+      <recent name="by.itstep.bpp" />
+      <recent name="by.itstep.bfpp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="init.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/sql/init.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="CompanyServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.itstep.springApplication.integration.service.CompanyServiceIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CompanyServiceIT.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.itstep.springApplication.integration.service.CompanyServiceIT.findById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CompanyServiceTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.itstep.springApplication.service.CompanyServiceTest.findById&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-starter [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-starter.main" />
+      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="by.itstep.springApplication.Main" />
+      <option name="VM_PARAMETERS" value="-Ddb.username=victordev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.init.sql" />
+      <item itemvalue="Gradle.CompanyServiceIT" />
+      <item itemvalue="Gradle.CompanyServiceIT.findById" />
+      <item itemvalue="Gradle.CompanyServiceTest.findById" />
+      <item itemvalue="Gradle.spring-starter [bootRun]" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.init.sql" />
+        <item itemvalue="Gradle.CompanyServiceIT" />
+        <item itemvalue="Gradle.CompanyServiceIT.findById" />
+        <item itemvalue="Gradle.CompanyServiceTest.findById" />
+        <item itemvalue="Gradle.spring-starter [bootRun]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,17 +290,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701550040301</updated>
-      <workItem from="1701550041347" duration="1000" />
+      <workItem from="1701550041347" duration="12468000" />
+      <workItem from="1701633636133" duration="4852000" />
+      <workItem from="1701705899891" duration="134000" />
+      <workItem from="1701706322152" duration="1869000" />
+      <workItem from="1701708722487" duration="8295000" />
+      <workItem from="1702236800099" duration="852000" />
+      <workItem from="1702237687214" duration="1461000" />
+      <workItem from="1702239605909" duration="2954000" />
+      <workItem from="1702311204252" duration="8784000" />
+      <workItem from="1702486881203" duration="3144000" />
+      <workItem from="1702490645150" duration="278000" />
+      <workItem from="1702491139830" duration="25000" />
+      <workItem from="1702491169294" duration="600000" />
+      <workItem from="1702492949614" duration="695000" />
+      <workItem from="1702807575050" duration="4507000" />
+      <workItem from="1702917081442" duration="2717000" />
+      <workItem from="1702925294156" duration="1911000" />
+      <workItem from="1702932691165" duration="4782000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/itstep/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/bpp/InjectBeanPostProcessor.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/Main.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
