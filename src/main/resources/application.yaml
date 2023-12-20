@@ -30,8 +30,4 @@ logging:
   file:
     name: victordev.log
     path: /
-jpa:
-  properties.hibernate:
-    show_sql: true
-    format_sql: true
-    hbm2dll.auto: validate
+

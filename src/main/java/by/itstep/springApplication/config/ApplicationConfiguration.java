@@ -21,14 +21,4 @@ public class ApplicationConfiguration {
         return new ConnectionPool("text ", 20);
     }
 
-    @Bean
-    @Profile("prod")
-    public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
-        return new UserRepository(connectionPool);
-    }
-
-    @Bean
-    public UserRepository userRepository3() {
-        return new UserRepository(pool3());
-    }
 }

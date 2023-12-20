@@ -27,8 +27,8 @@ public class User implements BaseEntity<Long> {
 
     private LocalDate birthDate;
 
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     @Enumerated(EnumType.STRING)
     private Role role;
     @ManyToOne(fetch = FetchType.LAZY)

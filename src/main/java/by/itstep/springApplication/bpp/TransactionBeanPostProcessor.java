@@ -13,6 +13,7 @@ import java.util.Map;
 @Slf4j
 public class TransactionBeanPostProcessor implements BeanPostProcessor {
     private final Map<String, Class<?>> transactionBeans = new HashMap<>();
+
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (bean.getClass().isAnnotationPresent(Transaction.class)) {
@@ -30,6 +31,9 @@ public class TransactionBeanPostProcessor implements BeanPostProcessor {
                         log.info("Open transaction");
                         try {
                             return method.invoke(bean, objects);
+                        } catch (Exception exception) {
+                            log.error("Rollback exception");
+                            throw exception;
                         } finally {
                             log.info("Close transaction");
                         }
