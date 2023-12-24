@@ -1,22 +1,24 @@
 package by.itstep.springApplication.database.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
+@NamedEntityGraph(
+        name = "User.company",
+        attributeNodes = @NamedAttributeNode("company"))
 @Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@ToString(exclude = {"userChats"})
 @Table(name = "users")
-public class User implements BaseEntity<Long> {
+public class User extends AuditingEntity<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,6 +40,4 @@ public class User implements BaseEntity<Long> {
     @Builder.Default
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
-
-
 }
