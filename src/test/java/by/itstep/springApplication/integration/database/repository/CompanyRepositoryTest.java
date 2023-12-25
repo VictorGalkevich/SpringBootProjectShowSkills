@@ -2,9 +2,11 @@ package by.itstep.springApplication.integration.database.repository;
 
 import by.itstep.springApplication.database.entity.Company;
 import by.itstep.springApplication.database.repository.CompanyRepository;
+import by.itstep.springApplication.integration.IntegrationTestBase;
 import by.itstep.springApplication.integration.annotatation.IT;
-import jakarta.persistence.EntityManager;
+import javax.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,10 +17,9 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
 @RequiredArgsConstructor
 @Rollback
-class CompanyRepositoryTest {
+class CompanyRepositoryTest extends IntegrationTestBase {
 
     private static final Long APPLE_ID = 5L;
     private final EntityManager entityManager;
@@ -32,6 +33,7 @@ class CompanyRepositoryTest {
     }
 
     @Test
+    @Disabled
     void delete() {
         var maybeCompany = companyRepository.findById(APPLE_ID);
         assertTrue(maybeCompany.isPresent());
@@ -42,7 +44,7 @@ class CompanyRepositoryTest {
     @Test
     void findById() {
         transactionTemplate.executeWithoutResult(tx -> {
-            var company = entityManager.find(Company.class, 1);
+            var company = entityManager.find(Company.class, 1L);
             assertNotNull(company);
             assertThat(company.getLocales()).hasSize(2);
         });

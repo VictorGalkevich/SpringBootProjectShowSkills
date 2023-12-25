@@ -30,4 +30,7 @@ logging:
   file:
     name: victordev.log
     path: /
+  level:
+    org.springframework.jdbc.core: TRACE
+
 

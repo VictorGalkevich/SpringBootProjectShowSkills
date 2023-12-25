@@ -6,6 +6,7 @@ import by.itstep.springApplication.database.repository.UserRepository;
 import by.itstep.springApplication.dto.PersonalInfo;
 import by.itstep.springApplication.dto.PersonalInfoInterface;
 import by.itstep.springApplication.dto.UserFilter;
+import by.itstep.springApplication.integration.IntegrationTestBase;
 import by.itstep.springApplication.integration.annotatation.IT;
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;
@@ -13,6 +14,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.annotation.Commit;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -20,11 +23,25 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
+
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
+
+    @Test
+    void checkBatch() {
+        var users = userRepository.findAll();
+        userRepository.updateCompanyAndRole(users);
+        System.out.println();
+    }
+
+    @Test
+    void checkJdbcTemplate() {
+        List<PersonalInfo> allByCompanyIdAndRole = userRepository.findAllByCompanyIdAndRole(1L, Role.USER);
+        Assertions.assertThat(allByCompanyIdAndRole).hasSize(1);
+        System.out.println(allByCompanyIdAndRole);
+    }
 
     @Test
     void checkAuditing() {
@@ -36,7 +53,7 @@ class UserRepositoryTest {
 
     @Test
     void checkCustomImplementation() {
-        UserFilter filter = new UserFilter(null, "%ov%", LocalDate.now());
+        UserFilter filter = new UserFilter(null, "ov", LocalDate.now());
         List<User> allByFilter = userRepository.findAllByFilter(filter);
         System.out.println(allByFilter);
     }

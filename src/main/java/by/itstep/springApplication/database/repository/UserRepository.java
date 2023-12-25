@@ -2,21 +2,18 @@ package by.itstep.springApplication.database.repository;
 
 import by.itstep.springApplication.database.entity.Role;
 import by.itstep.springApplication.database.entity.User;
-import by.itstep.springApplication.database.pool.ConnectionPool;
-import by.itstep.springApplication.dto.PersonalInfo;
 import by.itstep.springApplication.dto.PersonalInfoInterface;
-import jakarta.persistence.Entity;
-import jakarta.persistence.LockModeType;
-import jakarta.persistence.QueryHint;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.Scope;
+import javax.persistence.*;
+import javax.persistence.LockModeType;
+import javax.persistence.QueryHint;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.*;
+import org.springframework.data.jpa.repository.EntityGraph;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+import org.springframework.data.repository.history.RevisionRepository;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -25,7 +22,11 @@ import java.util.Optional;
 
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long>, FilterUserRepository {
+public interface UserRepository extends JpaRepository<User, Long>,
+        FilterUserRepository ,
+        RevisionRepository<User, Long, Long>,
+        QuerydslPredicateExecutor<User>
+{
     List<User> findAllByFirstnameContainingAndLastnameContaining(String firstname, String lastname);
 
     @Modifying(clearAutomatically = true)
