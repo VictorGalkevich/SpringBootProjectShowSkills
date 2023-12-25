@@ -1,13 +1,11 @@
 db:
-  username: postgres
-  password: pass
+  username: test
+  password: test
+
 spring:
   datasource:
     username: test
     password: test
   jpa:
-    properties:
-      hibernate:
-        hbm2ddl.auto: update
-        show_sql: true
-        format_sql: true
+    properties.hibernate:
+      hbm2ddl.auto: validate

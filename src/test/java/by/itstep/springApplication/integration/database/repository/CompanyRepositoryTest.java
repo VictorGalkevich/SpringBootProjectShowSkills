@@ -1,15 +1,15 @@
 package by.itstep.springApplication.integration.database.repository;
 
 import by.itstep.springApplication.database.entity.Company;
+import by.itstep.springApplication.database.entity.User;
 import by.itstep.springApplication.database.repository.CompanyRepository;
 import by.itstep.springApplication.integration.IntegrationTestBase;
-import by.itstep.springApplication.integration.annotatation.IT;
 import javax.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.Commit;
 import org.springframework.test.annotation.Rollback;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.Map;
@@ -52,15 +52,11 @@ class CompanyRepositoryTest extends IntegrationTestBase {
 
     @Test
     void save() {
-        var company = Company.builder()
-                .name("Apple1")
-                .locales(Map.of(
-                        "ru", "Apple описание",
-                        "en", "Apple description"
-                ))
+        User user = User.builder()
+                .username("name")
                 .build();
-        entityManager.persist(company);
-        assertNotNull(company.getId());
+        entityManager.persist(user);
+        assertNotNull(user.getId());
     }
 
 }
