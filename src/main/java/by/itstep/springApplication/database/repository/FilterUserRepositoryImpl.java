@@ -8,14 +8,9 @@ import by.itstep.springApplication.dto.UserFilter;
 import com.querydsl.jpa.impl.JPAQuery;
 import javax.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
-import java.time.LocalDate;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
