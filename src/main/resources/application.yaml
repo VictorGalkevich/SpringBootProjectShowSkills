@@ -30,6 +30,8 @@ logging:
     path: /
 spring:
   mvc:
+    format:
+      date: iso
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
@@ -45,3 +47,4 @@ spring:
       show_sql: true
       format_sql: true
       hbm2ddl.auto: validate
+    open-in-view: false
