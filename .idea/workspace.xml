@@ -7,16 +7,22 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="testing + repositories">
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserReadDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/bye.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/login.jsp" afterDir="false" />
+    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="controllers + dto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/CompanyReadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserCreateEditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserReadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/service/UserServiceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/FilterUserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/FilterUserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/CompanyReadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/CompanyReadDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserReadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserReadDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/service/CompanyServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/service/CompanyServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/service/CompanyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/service/CompanyServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +56,9 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Record" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -145,31 +151,7 @@
       <recent name="by.itstep.bfpp" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="CompanyRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;by.itstep.springApplication.integration.database.repository.CompanyRepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.UserServiceIT">
     <configuration name="CompanyRepositoryTest.save" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,30 +200,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;by.itstep.springApplication.integration.database.repository.UserRepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="UserRepositoryTest.checkAuditing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -266,6 +224,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.itstep.springApplication.integration.service.UserServiceIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceIT.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.itstep.springApplication.integration.service.UserServiceIT.findAll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-starter.main" />
       <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=qa" />
@@ -276,20 +282,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.CompanyRepositoryTest" />
+      <item itemvalue="Gradle.UserServiceIT" />
+      <item itemvalue="Gradle.UserServiceIT.findAll" />
       <item itemvalue="Gradle.CompanyRepositoryTest.save" />
       <item itemvalue="Gradle.Tests in 'by.itstep.springApplication.integration.database.repository'" />
-      <item itemvalue="Gradle.UserRepositoryTest" />
       <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserServiceIT" />
+        <item itemvalue="Gradle.UserServiceIT.findAll" />
         <item itemvalue="Gradle.Tests in 'by.itstep.springApplication.integration.database.repository'" />
         <item itemvalue="Gradle.CompanyRepositoryTest.save" />
         <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
-        <item itemvalue="Gradle.UserRepositoryTest" />
-        <item itemvalue="Gradle.CompanyRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +337,7 @@
       <workItem from="1703664265453" duration="12000" />
       <workItem from="1703664373719" duration="312000" />
       <workItem from="1703702332251" duration="1611000" />
-      <workItem from="1703930901008" duration="4738000" />
+      <workItem from="1703930901008" duration="15344000" />
     </task>
     <task id="LOCAL-00001" summary="Added mapping">
       <option name="closed" value="true" />
@@ -373,7 +379,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703535784456</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="controller">
+      <option name="closed" value="true" />
+      <created>1703935754569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703935754569</updated>
+    </task>
+    <task id="LOCAL-00007" summary="controllers + dto">
+      <option name="closed" value="true" />
+      <created>1703937750582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703937750582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +406,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="repositories" />
     <MESSAGE value="testing + repositories" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing + repositories" />
+    <MESSAGE value="controller" />
+    <MESSAGE value="controllers + dto" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers + dto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,6 +427,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java</url>
           <line>26</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/LoginController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

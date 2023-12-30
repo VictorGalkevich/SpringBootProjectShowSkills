@@ -39,7 +39,7 @@ class CompanyServiceTest {
 
         assertTrue(actualResult.isPresent());
 
-        CompanyReadDto expectedResult = new CompanyReadDto(COMPANY_ID);
+        CompanyReadDto expectedResult = new CompanyReadDto(COMPANY_ID, null);
         actualResult.ifPresent(actual -> assertEquals(actual, expectedResult));
 
         verify(applicationEventPublisher).publishEvent(any(EntityEvent.class));

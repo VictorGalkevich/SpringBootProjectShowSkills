@@ -17,14 +17,14 @@ import java.util.List;
 @SessionAttributes({"user"})
 public class GreetingController {
 
-    @ModelAttribute("roles")
+    @ModelAttribute
     public List<Role> roles() {
         return Arrays.asList(Role.values());
     }
 
     @GetMapping("/hello")
     public String hello(Model model, HttpServletRequest request, UserReadDto userReadDto) {
-        model.addAttribute("user", new UserReadDto(1L, "kirchenok"));
+        /*model.addAttribute("user", new UserReadDto(1L, "kirchenok"));*/
         return "greeting/hello";
     }
 
