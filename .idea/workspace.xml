@@ -7,21 +7,41 @@
     <option name="diagramMode" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="config + tests + formatters">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" afterDir="false" />
+    <list default="true" id="e5447946-24fc-459f-8c4c-4948b16aa99b" name="Changes" comment="thymeleaf">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/handler/ControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/handler/RestControllerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/rest/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/validation/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/validation/UserInfoValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-3.0.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error/error500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/AuditingConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/config/AuditingConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Revision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/Revision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/querydsl/QPredicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/querydsl/QPredicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserCreateEditDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserCreateEditDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserReadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/dto/UserReadDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserCreateEditMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserCreateEditMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserReadMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/mapper/UserReadMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/itstep/springApplication/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-1.0.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.0.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.0.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-2.2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/bye.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting/bye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/greeting/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/http/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/itstep/springApplication/integration/http/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/version.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +72,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Record" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -88,43 +108,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vitali/Downloads/spring-starter/src/main/resources/db/changelog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/vitali/Downloads/spring-starter/src/main/java/by/itstep/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.11260331&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;template.copyright.formatting&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8d2bc06b08999b8573f6657470640130&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vitali/Downloads/spring-starter/src/main/resources/db/changelog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "/Users/vitali/Downloads/spring-starter/src/main/java/by/itstep/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.11260331",
+    "settings.editor.selected.configurable": "template.copyright.formatting",
+    "spring.configuration.checksum": "8d2bc06b08999b8573f6657470640130",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.itstep.springApplication.validation" />
       <recent name="by.itstep.springApplication.database.entity" />
       <recent name="by.itstep.springApplication.config" />
       <recent name="by.itstep.springApplication.listener.entity" />
@@ -229,7 +253,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest.checkAuditing" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +266,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;by.itstep.springApplication.integration.service.UserServiceIT&quot;" />
+            <option value="&quot;by.itstep.springApplication.integration.database.repository.UserRepositoryTest.checkAuditing&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -253,28 +277,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceIT.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;by.itstep.springApplication.integration.service.UserServiceIT.findAll&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+    <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -287,20 +290,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
       <item itemvalue="Gradle.UserControllerTest" />
       <item itemvalue="Gradle.UserControllerTest.create" />
       <item itemvalue="Gradle.UserControllerTest.findAll" />
-      <item itemvalue="Gradle.UserServiceIT" />
-      <item itemvalue="Gradle.UserServiceIT.findAll" />
+      <item itemvalue="HTTP Request.rest-api | #1" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rest-api | #1" />
+        <item itemvalue="Gradle.UserRepositoryTest.checkAuditing" />
         <item itemvalue="Gradle.UserControllerTest" />
         <item itemvalue="Gradle.UserControllerTest.create" />
         <item itemvalue="Gradle.UserControllerTest.findAll" />
-        <item itemvalue="Gradle.UserServiceIT" />
-        <item itemvalue="Gradle.UserServiceIT.findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -346,6 +349,9 @@
       <workItem from="1704287152328" duration="4343000" />
       <workItem from="1704355838694" duration="668000" />
       <workItem from="1704391052507" duration="1169000" />
+      <workItem from="1704403560332" duration="641000" />
+      <workItem from="1704887253854" duration="10400000" />
+      <workItem from="1704903065838" duration="14235000" />
     </task>
     <task id="LOCAL-00001" summary="Added mapping">
       <option name="closed" value="true" />
@@ -419,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703966716474</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="thymeleaf">
+      <option name="closed" value="true" />
+      <created>1704403590522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704403590522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +448,8 @@
     <MESSAGE value="controllers + dto" />
     <MESSAGE value="controllers + service" />
     <MESSAGE value="config + tests + formatters" />
-    <option name="LAST_COMMIT_MESSAGE" value="config + tests + formatters" />
+    <MESSAGE value="thymeleaf" />
+    <option name="LAST_COMMIT_MESSAGE" value="thymeleaf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -453,6 +468,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/http/controller/GreetingController.java</url>
           <line>26</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/itstep/springApplication/database/repository/FilterUserRepositoryImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

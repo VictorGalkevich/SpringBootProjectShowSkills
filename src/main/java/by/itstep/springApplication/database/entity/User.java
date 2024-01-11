@@ -1,6 +1,7 @@
 package by.itstep.springApplication.database.entity;
 
 import javax.persistence.*;
+
 import lombok.*;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.NotAudited;
@@ -34,9 +35,14 @@ public class User extends AuditingEntity<Long> {
     private LocalDate birthDate;
 
     private String firstname;
+
+    private String image;
+
     private String lastname;
+
     @Enumerated(EnumType.STRING)
     private Role role;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id")
     private Company company;

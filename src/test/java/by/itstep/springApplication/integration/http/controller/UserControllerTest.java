@@ -3,6 +3,7 @@ package by.itstep.springApplication.integration.http.controller;
 import by.itstep.springApplication.dto.UserCreateEditDto;
 import by.itstep.springApplication.integration.IntegrationTestBase;
 import lombok.RequiredArgsConstructor;
+import org.joda.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.test.web.servlet.MockMvc;
@@ -41,5 +42,4 @@ class UserControllerTest extends IntegrationTestBase {
                         redirectedUrlPattern("/users/{\\d+}")
                 );
     }
-
 }

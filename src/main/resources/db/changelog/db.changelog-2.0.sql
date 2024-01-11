@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset dmatveyenka:1
+--changeset victordev:1
 ALTER TABLE users
     ADD COLUMN created_at TIMESTAMP;
 

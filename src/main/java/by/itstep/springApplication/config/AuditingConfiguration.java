@@ -16,6 +16,6 @@ public class AuditingConfiguration {
 
     @Bean
     public AuditorAware<String> auditorAware() {
-        return () -> Optional.of("Victor Galkevich");
+        return () -> Optional.of("victordev");
     }
 }

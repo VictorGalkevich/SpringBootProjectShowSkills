@@ -1,22 +1,9 @@
 --liquibase formatted sql
 
---changeset dmatveyenka:1
-CREATE TABLE IF NOT EXISTS revision
-(
-    id BIGINT PRIMARY KEY ,
-    timestamp BIGINT NOT NULL
-);
+--changeset victordev:1
+ALTER TABLE users_aud
+    DROP CONSTRAINT users_aud_username_key;
 
---changeset dmatveyenka:2
-CREATE TABLE IF NOT EXISTS users_aud
-(
-    id BIGINT,
-    rev BIGINT REFERENCES revision (id),
-    revtype SMALLINT ,
-    username VARCHAR(64) NOT NULL UNIQUE ,
-    birth_date DATE,
-    firstname VARCHAR(64),
-    lastname VARCHAR(64),
-    role VARCHAR(32),
-    company_id BIGINT
-);
+--changeset victordev:2
+ALTER TABLE users_aud
+    ALTER COLUMN username DROP NOT NULL;
