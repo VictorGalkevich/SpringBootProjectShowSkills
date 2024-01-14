@@ -36,6 +36,8 @@ public class User extends AuditingEntity<Long> {
 
     private String firstname;
 
+    private String password;
+
     private String image;
 
     private String lastname;

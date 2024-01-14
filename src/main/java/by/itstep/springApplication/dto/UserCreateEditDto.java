@@ -2,6 +2,7 @@ package by.itstep.springApplication.dto;
 
 import by.itstep.springApplication.database.entity.Role;
 import by.itstep.springApplication.validation.UserInfo;
+import by.itstep.springApplication.validation.group.CreateAction;
 import lombok.Value;
 import lombok.experimental.FieldNameConstants;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -28,6 +29,9 @@ public class UserCreateEditDto {
     String firstname;
 
     String lastname;
+
+    @NotBlank(groups = CreateAction.class)
+    String rawPassword;
 
     Role role;
 
